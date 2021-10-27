@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	border-bottom: 1px solid #333;
+}
+
+a:hover {
+#	text-decoration: none;
+	color: #333;
+	border-bottom: 1px solid #333;
+}
+
+
+h1 {
+	font-family: 'Roboto-Medium', sans-serif;
+	font-size: 18px;
+}
+
+h2 {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 16px;
+}
+
+html {
+	height: 100%;
+	background: #595f68;
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 14px;
+}
+
+.wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-areas:
+	"header"
+	"interactive__area"
+	"footer";
+	grid-template-rows: 56px 238px;
+	align-content: center;
+	padding: 28px;
+}
+
+
+/**************/
+/*	 HEADER   */
+/**************/
+/**************/
+
+
+header {
+	grid-area: header;
+	background: #b1c5d4;
+	display: grid;
+	grid-template-areas: 
+	"logo";
+	grid-template-rows:  56px;
+	align-self: center;
+	border-radius: 14px 14px 0px 0px;
+}
+
+.logo {
+	display: grid;
+	grid-area: logo;
+	grid-template-areas:
+	"light__logo bold__logo";
+	font-size: 21px;
+	color: #333;
+	height: 56px;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.light__logo {
+	grid-area: light__logo;
+	font-family: 'Roboto-Light', sans-serif;
+}
+
+.bold__logo {
+	grid-area: bold__logo;
+	font-family: 'Roboto-Medium', sans-serif;
+}
+
+.logo a {
+	border-bottom: 0px solid #333;
+}
+
+.logo a, .logo a:hover {
+	border: 0;
+}
+
+
+/**************/
+/*	  BODY    */
+/**************/
+/**************/
+
+
+.interactive__area {
+	display: grid;
+	grid-area: interactive__area;
+	background: #9bacba;
+	justify-content: center;
+	border-radius: 0px 0px 14px 14px;
+}
+
+.main__form {
+	display: grid;
+	grid-template-areas:
+	"ball__radius__input"
+	"height__input"
+	"upload__button";
+	margin-top:28px;
+	margin-bottom: 28px;
+	grid-template-rows: 35px 35px 35px;
+	grid-row-gap: 38px;
+	width: 238px;
+  	height: 182px;
+  	justify-content: center;
+  	text-align:center;
+}
+
+.ball__radius__input {
+	grid-area: ball__radius__input;
+	background: #9bacba;
+	border: 1.5px solid #333;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	-webkit-appearance: none;
+	-moz-appearance: textfield;
+}
+
+.height__input {
+	grid-area: height__input;
+	background: #9bacba;
+	border: 1.5px solid #333;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	-webkit-appearance: none;
+	-moz-appearance: textfield;
+}
+
+.upload__button {
+	grid-area: upload__button;
+	color: #ddd;
+  	background: #595f68;
+  	font-family: 'Roboto-Medium', sans-serif;
+  	border: none;
+  	width: 112px;
+  	height: 35px;
+  	border-radius: 7px;
+  	border-bottom: 4px solid #117A60;
+  	margin: auto;
+  	cursor: pointer;
+}
+
+
+.result__area {
+	display: grid;
+	grid-area: interactive__area;
+	grid-template-areas:
+	"result__caption"
+	"result__string__1"
+	"result__string__2"
+	"back__button";
+	grid-row-gap: 30px;
+	background: #9bacba;
+	justify-content: center;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	border-radius: 0px 0px 14px 14px;
+}
+
+.result__caption {
+	display: grid;
+	grid-area: result__caption;
+	justify-content: center;
+}
+
+.result__string__1 {
+	display: grid;
+	grid-area: result__string__1;
+	justify-content: center;
+}
+.result__string__2 {
+	display: grid;
+	grid-area: result__string__2;
+	justify-content: center;
+}
+
+.back__button {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-area: back__button;
+	color: #ddd;
+  	background: #595f68;
+  	font-family: 'Roboto-Medium', sans-serif;
+  	border: none;
+  	width: 112px;
+  	height: 35px;
+  	border-radius: 7px;
+  	border-bottom: 4px solid #117A60;
+  	margin: auto;
+  	cursor: pointer;
+}
+
+
+/**************/
+/*	 FOOTER   */
+/**************/
+/**************/
+
+
+footer {
+	grid-area: footer;
+	text-align: center;
+	padding-top: 14px;
+}
+
+footer a, a:hover {
+	color: #333;
+}
+
+
+/**************/
+/*	 MEDIA    */
+/**************/
+/**************/
+
+
+@media (min-width: 385px) {
+	.wrapper {
+		width: 385px;
+		margin: auto;
+		padding: 0;
+	}
+}
+
+
+/**************/
+/*	 FONTS    */
+/**************/
+/**************/
+
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url("fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("fonts/Roboto-Regular.ttf");
+}
