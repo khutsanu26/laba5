@@ -35,7 +35,7 @@
     </div>
 
     <footer>
-        <a href="https://github.com/abramov26/pi223team26">GitHub</a>
+        <a href="https://github.com/khutsanu26/laba5project19">GitHub</a>
     </footer>
 
     </div>
