@@ -56,8 +56,14 @@ public class Calc extends HttpServlet {
 			String formattedResultInMm = String.format("%.2f",result_in_mm);
 			request.setAttribute("first", first_calc);
 			request.setAttribute("second", second_calc);
+			if (first_try <= 0 || second_try <= 0) {
+				formattedResult = "0";
+				formattedResultInMm = "0";
+				}
 			request.setAttribute("formattedResult", formattedResult);
 			request.setAttribute("formattedResultInMm", formattedResultInMm);
+		}
+		
 		}
 		
 	}
