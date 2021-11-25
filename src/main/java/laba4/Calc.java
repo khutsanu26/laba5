@@ -69,4 +69,3 @@ public class Calc extends HttpServlet {
 	}
 	
 	
-}
