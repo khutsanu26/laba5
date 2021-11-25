@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper"> 
 
     <header>
         <div class="logo">
