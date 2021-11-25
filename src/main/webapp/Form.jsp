@@ -17,7 +17,7 @@
     <header>
         <div class="logo">
             <a href="/">
-            <span class="light__logo">Вместимость&nbsp;</span><span class="bold__logo">Шарового Сектора</span></a>
+            <span class="light__logo">Вместимость&nbsp;</span><span class="bold__logo">Хуцану</span></a>
         </div>
     </header>
 
